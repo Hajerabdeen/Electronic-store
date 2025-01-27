@@ -1,10 +1,13 @@
 body {
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #f8f8f8;
+  font-family: "Poppins", serif, Arial, sans-serif;
+  background-color: #fffcfc;
 }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 
 
 #container-audio-video-sections {
@@ -28,10 +31,10 @@ body {
 #header-section-categories .category {
   position: relative;
   background-color: #ffffff;
-  padding: 0px 30px 0 40px; ;
+  padding: 10px 0px 0 20px; ;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 375px;
   height: 275px;
   margin-bottom: 50px;
 }
@@ -66,9 +69,7 @@ body {
 
 
 /* This Code For Audio & Video Section */
-#audio-video-section, 
-#home-appliances-sectoin, 
-#air-conditioner-sectoin {
+#audio-video-section, #home-appliances-sectoin, #air-conditioner-sectoin {
   background-color: #ffffff;
   margin-top: 40px;
   padding: 20px 10px;
@@ -77,9 +78,7 @@ body {
 
 }
 
-#audio-video-section h2, 
-#home-appliances-sectoin h2, 
-#air-conditioner-sectoin h2 {
+#audio-video-section h2, #home-appliances-sectoin h2, #air-conditioner-sectoin h2 {
   display: inline;
   margin: 0px 20px;
 }
@@ -87,6 +86,7 @@ body {
 #container-audio-video-sections .products {
   width: 100%;
   display: flex;
+  justify-content: space-between;
   margin-top: 20px;
 }
 
@@ -152,38 +152,36 @@ body {
   margin-right: 5px;
 }
 
-
-
+/* this code for media query in audio & video sections */
 @media (max-width: 400px ) {
-  /* #container-audio-video-sections {
-      width: 90%;
-  } */
+  #container-audio-video-sections {
+      width: 85%;
+  }
 
 /* This Codes for Header Section */
   #header-section-categories .category {
-      width: 90%;
+      width: 100%;
       padding: 20px 30px 20px 10px;
       margin-bottom: 40px;
   }
   #header-section-categories .category h1{
-      font-size: 30px;
+      font-size: 25px;
   }
   
   #header-section-categories .category img {
       width: 65px; 
-      left:75%;
+      left:70%;
       bottom: -20px;
   }
   #header-section-categories .wide-image{
       width: 110px !important;
-      left: 60% !important;
+      left: 55% !important;
   }
 
 
 /* This Code For Audio & Video Section */
-  #container-audio-video-sections.products{
-      flex-wrap: wrap;
-      justify-content: space-between;
+#container-audio-video-sections .products{
+    flex-wrap: wrap;
   }
   #container-audio-video-sections .product{
       width: 38%;
@@ -192,13 +190,13 @@ body {
 
 
 @media (max-width: 599px ) and (min-width: 400px) {
-  /* #container-audio-video-sections {
+  #container-audio-video-sections {
       width: 90%;
-  } */
+  }
 
 /* This Codes for Header Section */
-  #header-section-categories.category {
-      width: 90%;
+  #header-section-categories .category {
+      width: 100%;
       padding: 20px 30px 20px 40px;
       margin-bottom: 40px;
   }
@@ -220,7 +218,6 @@ body {
 /* This Code For Audio & Video Section */
   #container-audio-video-sections .products{
       flex-wrap: wrap;
-      justify-content: space-between;
   }
   #container-audio-video-sections .product{
       width: 40%;
@@ -260,10 +257,9 @@ body {
 /* This Code For Audio & Video Section */
   #container-audio-video-sections .products{
       flex-wrap: wrap;
-      justify-content: space-between;
   }
   #container-audio-video-sections .product{
-      width: 25%;
+      width: 30%;
   }
 }
 
@@ -272,7 +268,7 @@ body {
       width: 95%;
   }
   #header-section-categories .category {
-      width: 230px;
+      width: 30%;
       padding-left: 20px;
   }
   #header-section-categories .category h1{
@@ -301,18 +297,138 @@ body {
 
 
 
+/* this is the css code for the applicants section */
+.Applicants-container {
+  width: 85%;
+  margin: auto;
+}
+.Applicants-container .banner img {
+  width: 100%;
+  margin: 20px 0;
+}
+#Kitchen-appliances,
+#Refrigerators,
+#PCs-Laptop {
+  margin: 25px 0;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #dce3e5;
+}
+.Applicants-container .sec-name {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px 20px;
+}
+.Applicants-container .sec-name h2 {
+  margin: 0;
+}
+.Applicants-container .sec-name p {
+  font-weight: 700;
+  color: #0769da;
+  margin: 0px 0 0 15px;
+  cursor: pointer;
+}
 
+.Applicants-container .product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.Applicants-container .product {
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+.Applicants-container .product img {
+  width: 100%;
+  height: auto;
+}
+.Applicants-container .icons {
+  display: flex;
+  font-size: small;
+  margin-top: 10px;
+  color: gold;
+}
+.Applicants-container .description {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+}
+.Applicants-container .description p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.Applicants-container .description .price .prev {
+  color: #b6babe;
+  text-decoration: line-through;
+}
+.Applicants-container .description .price .current {
+  color: #48515b;
+}
+.Applicants-container .sale-badge {
+  position: absolute;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  top: 10px;
+  left: 10px;
+}
+.Applicants-container .cart-icon {
+  position: absolute;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  cursor: pointer;
+  transition: 3s;
+}
+.Applicants-container .product:hover .cart-icon {
+  display: flex !important;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media (max-width: 767px) {
+  .Applicants-container .product-container {
+    flex-direction: column;
+  }
+  .Applicants-container .product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Applicants-container .sec-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .Applicants-container .sec-name h2,
+  p {
+    font-size: 15px;
+  }
+  .Applicants-container .sec-name p {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Applicants-container .product-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Applicants-container .product {
+    width: 48%;
+  }
+  .Applicants-container .sec-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
