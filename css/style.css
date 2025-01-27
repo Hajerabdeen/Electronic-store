@@ -1,0 +1,143 @@
+body {
+  font-family: "Poppins", serif;
+  background-color: #fffcfc;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Applicants-container {
+  width: 85%;
+  margin: auto;
+}
+.Applicants-container .banner img {
+  width: 100%;
+  margin: 20px 0;
+}
+#Kitchen-appliances,
+#Refrigerators,
+#PCs-Laptop {
+  margin: 25px 0;
+  background-color: #ffffff;
+  padding: 10px;
+  border: 1px solid #dce3e5;
+}
+.Applicants-container .sec-name {
+  display: flex;
+  align-items: center;
+  padding: 20px 0px 20px 20px;
+}
+.Applicants-container .sec-name h2 {
+  margin: 0;
+}
+.Applicants-container .sec-name p {
+  font-weight: 700;
+  color: #0769da;
+  margin: 0px 0 0 15px;
+  cursor: pointer;
+}
+
+.Applicants-container .product-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffff;
+}
+.Applicants-container .product {
+  width: 25%;
+  text-align: center;
+  position: relative;
+}
+.Applicants-container .product img {
+  width: 100%;
+  height: auto;
+}
+.Applicants-container .icons {
+  display: flex;
+  font-size: small;
+  margin-top: 10px;
+  color: gold;
+}
+.Applicants-container .description {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 600;
+}
+.Applicants-container .description p {
+  font-size: 16px;
+  line-height: 1.4;
+}
+.Applicants-container .description .price .prev {
+  color: #b6babe;
+  text-decoration: line-through;
+}
+.Applicants-container .description .price .current {
+  color: #48515b;
+}
+.Applicants-container .sale-badge {
+  position: absolute;
+  background-color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  top: 10px;
+  left: 10px;
+}
+.Applicants-container .cart-icon {
+  position: absolute;
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  top: 10px;
+  right: 10px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  cursor: pointer;
+  transition: 3s;
+}
+.Applicants-container .product:hover .cart-icon {
+  display: flex !important;
+}
+
+@media (max-width: 767px) {
+  .Applicants-container .product-container {
+    flex-direction: column;
+  }
+  .Applicants-container .product {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Applicants-container .sec-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+  .Applicants-container .sec-name h2,
+  p {
+    font-size: 15px;
+  }
+  .Applicants-container .sec-name p {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .Applicants-container .product-container {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .Applicants-container .product {
+    width: 48%;
+  }
+  .Applicants-container .sec-name {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+  }
+}
