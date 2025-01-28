@@ -621,7 +621,7 @@ a {
 /* this is the css code for the applicants section */
 .Applicants-container {
   width: 95%;
-  margin: auto;
+  margin: auto !important;
 }
 .Applicants-container .banner img {
   width: 100%;
@@ -695,8 +695,8 @@ a {
   background-color: white;
   padding: 5px 10px;
   border-radius: 10px;
-  top: 10px;
-  left: 10px;
+  top: 25px;
+  left: 25px;
 }
 .Applicants-container .cart-icon {
   position: absolute;
@@ -704,8 +704,8 @@ a {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  top: 10px;
-  right: 10px;
+  top: 25px;
+  right: 25px;
   align-items: center;
   justify-content: center;
   display: none;
@@ -731,8 +731,10 @@ a {
     justify-content: space-between;
     padding: 10px;
   }
-  .Applicants-container .sec-name h2,
-  p {
+  .Applicants-container .sec-name h2{
+    font-size: 15px;
+  }
+  .Applicants-container .sec-name p {
     font-size: 15px;
   }
   .Applicants-container .sec-name p {
