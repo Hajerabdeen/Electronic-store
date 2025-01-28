@@ -621,7 +621,7 @@ a {
 /* this is the css code for the applicants section */
 .Applicants-container {
   width: 95%;
-  margin: auto;
+  margin: auto !important;
 }
 .Applicants-container .banner img {
   width: 100%;
@@ -731,8 +731,10 @@ a {
     justify-content: space-between;
     padding: 10px;
   }
-  .Applicants-container .sec-name h2,
-  p {
+  .Applicants-container .sec-name h2{
+    font-size: 15px;
+  }
+  .Applicants-container .sec-name p {
     font-size: 15px;
   }
   .Applicants-container .sec-name p {
